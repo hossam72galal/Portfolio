@@ -477,7 +477,10 @@ footer {
     .grid-3 { grid-template-columns: repeat(2, 1fr); }
     .hero-content { grid-template-columns: 1fr; text-align: center; }
     .hero-buttons { justify-content: center; }
-    .hero-image { display: none; } /* Hide image on tablet to save space */
+    .hero-image { 
+        display: block; 
+        margin-top: 40px; /* عشان تدي مسافة بينها وبين الزراير اللي فوقها */
+    }
     .about-grid { grid-template-columns: 1fr; }
     .about-stats { border-left: none; border-top: 1px solid var(--glass-border); padding-top: 20px; flex-direction: row; justify-content: space-around; }
     .contact-wrapper { grid-template-columns: 1fr; }
@@ -575,4 +578,5 @@ footer {
     color: var(--bg-dark);
     box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
     transform: translateY(-2px);
+
 }
